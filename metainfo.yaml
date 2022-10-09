@@ -1,0 +1,21 @@
+maintainer:
+description: Lightweight plotting framework
+tier: 1
+type: functional
+platforms:
+    - name: Linux
+    - name: FreeBSD
+    - name: Windows
+    - name: macOS
+    - name: Android
+portingAid: false
+deprecated: false
+release: true
+libraries:
+ - qmake: KPlotting
+   cmake: "KF5::Plotting"
+cmakename: KF5Plotting
+
+public_lib: true
+group: Frameworks
+subgroup: Tier 1
