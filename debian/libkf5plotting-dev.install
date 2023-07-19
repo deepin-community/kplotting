@@ -1,5 +1,4 @@
 usr/include/KF5/KPlotting/
-usr/include/KF5/kplotting_version.h
 usr/lib/*/cmake/KF5Plotting/
 usr/lib/*/libKF5Plotting.so
 usr/lib/*/qt5/mkspecs/modules/qt_KPlotting.pri

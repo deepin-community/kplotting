@@ -7,13 +7,13 @@ Uploaders: Aurélien COUDERC <coucouf@debian.org>,
 Build-Depends: cmake (>= 3.16~),
                debhelper-compat (= 13),
                doxygen,
-               extra-cmake-modules (>= 5.90.0~),
+               extra-cmake-modules (>= 5.103.0~),
                libqt5sql5-sqlite,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
                qtbase5-dev (>= 5.15.2~),
                qttools5-dev,
                qttools5-dev-tools (>= 5.4),
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Homepage: https://invent.kde.org/frameworks/kplotting
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kplotting
 Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kplotting.git
@@ -26,7 +26,7 @@ Depends: libkf5plotting5 (= ${binary:Version}),
          qtbase5-dev (>= 5.15.2~),
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: libkf5plotting-doc (= ${source:Version})
+Recommends: libkf5plotting-doc (= ${source:Version}),
 Description: development files for kplotting
  KPlotWidget is a QWidget-derived class that provides a virtual base class
  for easy data-plotting. The idea behind KPlotWidget is that you only have
@@ -35,12 +35,12 @@ Description: development files for kplotting
  to screen pixel units.
  .
  Contains development files for kplotting.
-Breaks: libkf5kdelibs4support-dev (<< 5.54)
+Breaks: libkf5kdelibs4support-dev (<< 5.54),
 
 Package: libkf5plotting-doc
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
 Description: KPlotting provides classes to do plotting (documentation)
  KPlotWidget is a QWidget-derived class that provides a virtual base class
  for easy data-plotting. The idea behind KPlotWidget is that you only have
@@ -54,11 +54,11 @@ Section: doc
 Package: libkf5plotting5
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends},
 Description: KPlotting provides classes to do plotting.
  KPlotWidget is a QWidget-derived class that provides a virtual base class
  for easy data-plotting. The idea behind KPlotWidget is that you only have
  to specify information in "data units"; i.e., the natural units of the
  data being plotted.  KPlotWidget automatically converts everything
  to screen pixel units.
-Breaks: kdesignerplugin (<< 5.54)
+Breaks: kdesignerplugin (<< 5.54),
